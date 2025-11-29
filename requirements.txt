@@ -10,3 +10,5 @@ openai>=1.0
 requests>=2.31
 pydantic>=1.10
 matplotlib>=3.4
+beautifulsoup4>=4.14
+whisper>=1.1
