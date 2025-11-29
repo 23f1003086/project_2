@@ -26,8 +26,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Fixed: Use Python API instead of playwright CLI command
-RUN python -c "from playwright import install; install()"
+# Fixed: Correct Playwright installation command
+RUN python -m playwright install --with-deps
 
 EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
