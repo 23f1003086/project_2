@@ -9,3 +9,4 @@ pdfminer.six>=20221105
 openai>=1.0
 requests>=2.31
 pydantic>=1.10
+matplotlib>=3.4
