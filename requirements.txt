@@ -1,16 +1,11 @@
-fastapi==0.122.0
-uvicorn==0.38.0
-httpx==0.28.1
-pandas==2.3.3
-pdfminer.six==20251107
-matplotlib==3.10.7
-requests==2.32.5
-openai==2.8.1
-python-dotenv==1.2.1
-pydantic==2.12.4
-typing-extensions==4.15.0
-playwright==1.56.0
 
-# Dependencies removed:
-# - pdfplumber (Not used by the script)
-# - beautifulsoup4 (Not used by the script)
+fastapi>=0.95
+uvicorn[standard]>=0.22
+httpx[http2]>=0.24
+playwright>=1.40
+python-dotenv>=1.0
+pandas>=2.0
+pdfminer.six>=20221105
+openai>=1.0
+requests>=2.31
+pydantic>=1.10
