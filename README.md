@@ -1,3 +1,14 @@
+---
+title: "LLM Quiz Solver"
+emoji: "🧠"
+colorFrom: "indigo"
+colorTo: "blue"
+sdk: "docker"
+sdk_version: "0.99.0"
+app_file: "main.py"
+pinned: false
+---
+
 # LLM Quiz Solver
 
 A FastAPI-based quiz-solving service that uses a large language model (via AIPipe/OpenAI) to automatically solve web-based quizzes. It fetches quiz content, optionally processes attached data (CSV, PDF, audio), generates Python code to compute answers, and submits them to the quiz endpoint.
@@ -26,7 +37,7 @@ You must add the following **Secrets** in your Hugging Face Space:
 |-----------------|-------------|
 | `STUDENT_SECRET` | Secret key used to validate quiz requests |
 | `AIPIPE_TOKEN`   | API key for AIPipe/OpenAI service |
-| `QUIZ_TIMEOUT_SECONDS` | Optional: max time per quiz  |
+| `QUIZ_TIMEOUT_SECONDS` | Optional: max time per quiz (default: 175 seconds) |
 
 > Go to your Space → Settings → Secrets → Add these variables.
 
