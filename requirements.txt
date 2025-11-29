@@ -3,12 +3,14 @@ uvicorn==0.38.0
 httpx==0.28.1
 pandas==2.3.3
 pdfminer.six==20251107
-pdfplumber==0.11.8
 matplotlib==3.10.7
 requests==2.32.5
-beautifulsoup4==4.14.2
 openai==2.8.1
 python-dotenv==1.2.1
 pydantic==2.12.4
 typing-extensions==4.15.0
 playwright==1.56.0
+
+# Dependencies removed:
+# - pdfplumber (Not used by the script)
+# - beautifulsoup4 (Not used by the script)
