@@ -27,8 +27,8 @@ from dotenv import load_dotenv
 import pandas as pd
 from pdfminer.high_level import extract_text_to_fp
 
-# Load environment
-load_dotenv()
+
+
 
 STUDENT_SECRET = os.getenv("STUDENT_SECRET")
 AIPIPE_TOKEN = os.getenv("AIPIPE_TOKEN")
