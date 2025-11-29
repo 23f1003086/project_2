@@ -414,7 +414,9 @@ async def solve_quiz_task(email: str, secret: str, url: str):
 
 # ------------------ FastAPI endpoints ------------------
 app = FastAPI(title="LLM Analysis Quiz Solver - Patched")
-
+@app.get("/")
+async def root():
+    return {"message": "LLM Quiz Solver is running! Use /solve POST to submit a quiz."}
 @app.post('/solve')
 async def handle_quiz_request(task: QuizTask, background_tasks: BackgroundTasks):
     if task.secret != STUDENT_SECRET:
