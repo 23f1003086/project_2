@@ -38,4 +38,4 @@ EXPOSE 8000
 
 # 6. Command to run the application using Uvicorn
 # 'app:app' assumes your FastAPI instance is named 'app' inside the 'app.py' file.
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
